@@ -59,7 +59,9 @@ def login_complete():
         print(rec[2])
     cursor.close()
     conn.close()
-    
+    #if 문써서 로그인 되면은 로그인 되었습니다 페이지 or 자바 스크립트 로그인완료와 동시에 넘어가기,
+    #Flase면 다시입력하세요 
+    #아니면 로그인시 아이디 비번 if 써서 다시입력하세요 
     
     return render_template("complete_login.html", html_name=tmp_u_name, html_number=tmp_u_number)
 
